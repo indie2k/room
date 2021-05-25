@@ -22,9 +22,11 @@ spec:
             - containerPort: 8080
           resources:
             requests:
-              cpu: "200m"
+              cpu: "1000m"
+              mem: "256Mi"
             limits:
-              cpu: "500m"
+              cpu: "2500m"
+              mem: "512Mi"
 #          args:
 #            - /bin/sh
 #            - -c
