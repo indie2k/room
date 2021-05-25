@@ -23,10 +23,10 @@ spec:
           resources:
             requests:
               cpu: "1000m"
-              mem: "256Mi"
+              memory: "256Mi"
             limits:
               cpu: "2500m"
-              mem: "512Mi"
+              memory: "512Mi"
 #          args:
 #            - /bin/sh
 #            - -c
