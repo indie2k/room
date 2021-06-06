@@ -6,12 +6,13 @@ public class ReservationConfirmed extends AbstractEvent {
     private Long rsvId;
     private Long roomId;
     private String status;
-
+    private Long payId;
+    private Long carId; // 렌터카도 예약이 될 경우 들어옴
 
     public ReservationConfirmed(){
         super();
     }
-    
+
     public Long getRsvId() {
         return rsvId;
     }
@@ -32,6 +33,22 @@ public class ReservationConfirmed extends AbstractEvent {
 
     public void setStatus(String status) {
         this.status = status;
+    }
+
+    public Long getPayId() {
+        return payId;
+    }
+
+    public void setPayId(Long payId) {
+        this.payId = payId;
+    }
+
+    public Long getCarId() {
+        return carId;
+    }
+
+    public void setCarId(Long carId) {
+        this.carId = carId;
     }
 }
 
